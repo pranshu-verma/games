@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+#board {
+    background-color: #228B22;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(50, 1fr);
+    grid-template-columns: repeat(50, 1fr);
+}
+
+.snake {
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.snake:first-child {
+    background-color: red;
+}
+
+.food {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#game-config {
+    color: white;
+    height: 100vmin;
+    padding: 16px;
+}
